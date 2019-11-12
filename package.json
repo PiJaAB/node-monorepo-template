@@ -14,9 +14,11 @@
     "clean": "lerna clean",
     "import": "lerna import",
     "link": "lerna link",
-    "create": "lerna create"
+    "create": "lerna create",
+    "wizard": "lerna-wizard"
   },
   "devDependencies": {
-    "lerna": "^3.18.4"
+    "lerna": "^3.18.4",
+    "lerna-wizard": "^1.1.1"
   }
 }
