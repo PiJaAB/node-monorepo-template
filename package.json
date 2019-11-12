@@ -2,7 +2,9 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "wizard": "lerna-wizard"
+    "new": "lerna create",
+    "lerna": "lerna",
+    "wizard": "node -e \"require('lerna-wizard')({commandChoiceFilter:({value:v})=>!['ls','updated','create','init'].includes(v)}).catch(e=>{console.error(e);process.exit(1)})\""
   },
   "devDependencies": {
     "lerna": "^3.18.4",
